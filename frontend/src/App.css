@@ -1,0 +1,793 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh; /* Ensures full viewport height */
+  background-image: url('/blackbg.png'); /* Use the correct path */
+  background-size: cover; /* Cover the full area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+h1 {
+  color: #fbf8f8ee;
+  margin-bottom: 20px;
+}
+
+/* Styling for AddEmployee component */
+.add-employee {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+
+.add-employee label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+}
+
+.add-employee input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-employee button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-employee button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for EmployeeList component */
+.employee-list {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.employee-list h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.employee-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.employee-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.employee-list li:last-child {
+  border-bottom: none;
+} */
+/*yha se changes krne start kiye */
+/* Background styling for specific pages */
+
+/* Register page background */
+.register-container {
+  background-image: url('/regisbg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* yha se firse changes kiye*/
+.register-container form {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%; /* Makes it responsive */
+  margin-top: -50px; /* Moves the form slightly up */
+}
+
+.register-container input,
+.register-container button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/*yha tk */
+/* Login page background */
+
+.signIn-container {
+  background-image: url('/regisbg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.signIn-container form {
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for readability */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center; /* Center text inside the form */
+  margin-top: -80px; /* Moves the form slightly up */
+}
+
+
+.signIn-container h1 {
+  font-size: 2em; /* Make "signIn" text larger */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.signIn-container input,
+.signIn-container button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.signIn-container button {
+  font-size: 1.1em; /* Make button text a bit larger */
+  cursor: pointer;
+}
+
+
+/*yha tk */
+/* Login page background */
+
+.login-container {
+  background-image: url('/regisbg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-container form {
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for readability */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center; /* Center text inside the form */
+  margin-top: -80px; /* Moves the form slightly up */
+}
+
+
+.login-container h1 {
+  font-size: 2em; /* Make "Login" text larger */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-container input,
+.login-container button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.login-container button {
+  font-size: 1.1em; /* Make button text a bit larger */
+  cursor: pointer;
+}
+
+/* CRUD operations page background 
+.crud-container {
+  background-image: url('/path-to-your-image/crud-background.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}*/
+/* Styling for AddEmployee component */
+.add-employee {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.add-employee h2 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.add-employee label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+}
+
+.add-employee input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.add-employee button {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.add-employee button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for EmployeeList component */
+/*
+.employee-list {
+  background-color: rgba(255, 255, 255, 0.9); // Slightly transparent background 
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.employee-list h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.employee-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.employee-list li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.employee-list li:last-child {
+  border-bottom: none;
+}
+
+.employee-list button {
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.employee-list button:hover {
+  background-color: #e53935;
+}*/
+/* Styling for EmployeeList component in tabular form */
+.employee-list {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.employee-list h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.employee-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-list th,
+.employee-list td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.employee-list th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.employee-list tr:hover {
+  background-color: #f1f1f1;
+}
+
+.employee-list button {
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.employee-list button:hover {
+  background-color: #e53935;
+}
+
+
+/* Styling for UpdateEmployee component */
+.update-employee {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.update-employee h2 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.update-employee label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+}
+
+.update-employee input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.update-employee button {
+  padding: 12px 20px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.update-employee button:hover {
+  background-color: #1976D2;
+}
+
+/* Styling for DeleteEmployee component */
+.delete-employee {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.delete-employee h2 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.delete-employee p {
+  color: #555;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.delete-employee button {
+  padding: 12px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.delete-employee button:hover {
+  background-color: #e53935;
+}
+/* Styling for search bar */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Styling for search bar */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.dropdown {
+  position: absolute;
+  max-height: 150px;
+  width: 100%;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 4px;
+  z-index: 10;
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0 15px 0;
+}
+
+.dropdown li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #f1f1f1;
+}
+th {
+  cursor: pointer;
+  color: #333;
+}
+
+th:hover {
+  background-color: #f1f1f1;
+}
+/* MainMenu.css 
+.main-menu {
+  text-align: center;
+  padding: 30px;
+  background-color: #e9f5ff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  margin: 40px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.main-menu h2 {
+  color: #0056b3;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.main-menu button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 10px;
+  width: 85%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-menu button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-menu button:active {
+  background-color: #004080;
+  transform: scale(0.98);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.main-menu button + button {
+  margin-top: 15px;
+}
+
+.main-menu a {
+  text-decoration: none;
+}
+*/
+/* MainMenu.css 
+.main-menu {
+  text-align: center;
+  padding: 40px 30px;
+  background: linear-gradient(135deg, #6e7fbb, #405a9c);
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 50px auto;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.main-menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #f3f3f3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.main-menu button {
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 15px;
+  width: 80%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.main-menu button:hover {
+  background-color: #ff4500;
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-menu button:active {
+  background-color: #e63946;
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.main-menu button + button {
+  margin-top: 20px;
+}
+
+.main-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.main-menu a:hover {
+  color: #ff7f50;
+  text-decoration: underline;
+}
+
+.main-menu .menu-container {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .main-menu {
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .main-menu h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .main-menu button {
+    width: 90%;
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+  */
+  /* MainMenu.css */
+.main-menu {
+  text-align: center;
+  padding: 50px 35px;
+  background: linear-gradient(135deg, #6c5b7b, #355c7d, #6e7fbb);
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 50px auto;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.main-menu h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  transition: color 0.4s ease;
+}
+
+.main-menu h2:hover {
+  color: #ff6f61;
+}
+
+.main-menu button {
+  background: linear-gradient(135deg, #ff6f61, #ff8c42);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 18px 35px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 20px;
+  width: 80%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+
+.main-menu button:hover {
+  background: linear-gradient(135deg, #ff8c42, #ff6f61);
+  transform: translateY(-6px) scale(1.1);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+.main-menu button:active {
+  background-color: #d85c44;
+  transform: translateY(4px) scale(0.98);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.main-menu button + button {
+  margin-top: 25px;
+}
+
+.main-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.main-menu a:hover {
+  color: #ff6f61;
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+.main-menu .menu-container {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.main-menu .menu-container:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-menu {
+    padding: 40px 20px;
+  }
+
+  .main-menu h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+
+  .main-menu button {
+    width: 90%;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+}
+
+
